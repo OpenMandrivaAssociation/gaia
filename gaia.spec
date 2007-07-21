@@ -7,6 +7,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
+Patch0: gaia-0.1.2-fixgps.patch
 License: GPL
 Group: Sciences/Other
 Url: http://sourceforge.net/projects/gaia-clean/
@@ -24,6 +25,7 @@ Gaia is an open 3D earth viewer with GPS support.
 
 %prep
 %setup -q
+%patch0 -p1 -b .fixgps
 
 %build
 scons prefix=%{_prefix} gpsd=1
