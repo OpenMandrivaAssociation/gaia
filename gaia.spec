@@ -1,6 +1,6 @@
 %define name gaia
 %define version 0.1.2
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: Open 3D earth viewer with GPS support
 Name: %{name}
