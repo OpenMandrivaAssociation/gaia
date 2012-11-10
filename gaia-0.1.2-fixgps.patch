@@ -1,0 +1,11 @@
+--- gaia-0.1.2/programs/gaia/SConscript.fixgps	2006-12-04 19:11:44.000000000 +0100
++++ gaia-0.1.2/programs/gaia/SConscript	2007-07-21 13:20:56.000000000 +0200
+@@ -43,7 +43,7 @@ if not env.GetOption('clean'):
+ 		print "You need to install png development libraries"
+ 		config_ok = False
+ 
+-	if int(env['gpsd']) and not config.CheckHeader('gps.h'):
++	if int(env['gpsd']) and not config.CheckHeader([ 'stdint.h', 'gps.h' ]):
+ 		print "You need to install libgps from gpsd package (http://gpsd.berlios.de/), or turn off gpsd support with `gpsd=0' option (you'll still be able to use GPS)"
+ 		config_ok = False
+ 
