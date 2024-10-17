@@ -10,7 +10,7 @@ Source0: %{name}-%{version}.tar.bz2
 Patch0: gaia-0.1.2-fixgps.patch
 License: GPL
 Group: Sciences/Other
-Url: http://sourceforge.net/projects/gaia-clean/
+Url: https://sourceforge.net/projects/gaia-clean/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: scons
 BuildRequires: SDL-devel
